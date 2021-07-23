@@ -1,0 +1,21 @@
+<h3>Edit customer information</h3>
+<form [formGroup]="customerForm" (ngSubmit)="edit(id)">
+    <tr>
+        <td>First Name:</td>
+        <td><input type="text" formControlName="firstName"></td>
+    </tr>
+    <tr>
+        <td>Last Name:</td>
+        <td><input type="text" formControlName="lastName"></td>
+    </tr>
+    <tr>
+        <td>Address:</td>
+        <td><input type="text" formControlName="address"></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>
+            <button>Update</button>
+        </td>
+    </tr>
+</form>
